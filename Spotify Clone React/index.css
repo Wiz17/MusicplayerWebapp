@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+body{
+    background-color: rgb(58, 60, 61);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* /////////////////////////////////////// For PC////////////////////////////////////////// */
+@media all and (min-width:1008px){
+.nav{
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    height: 1.5cm;
+    background-color: rgb(3, 0, 0);
+    font-family: 'Ubuntu';
+    width: 100%;
+    flex-wrap: wrap;
+}
+.pk{
+    padding:0 20px ;
+}    
+.availability{
+    display: none;
+}
+.userIcon{
+    width: 45px;
+    height: 45px;
+    background-color: grey;
+    text-align: center;
+    margin:0 10px 0 auto;
+    border-radius: 50%;
+}
+.userIconMid{
+    margin-top: 12px;
+    font-size: 20px;
+}
+.image img{
+    width: 42px;
+}
+.me-2{
+    width: 13cm;
+}    
+.search{
+    float: right;
+}
+.srch{
+    display: flex;
+}
+
+.heading{
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 255, 255); 
+    padding: 10px 10px;
+
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.main-2{
+    width: 55%;
+    margin-left: 10px;
+}
+.adds{
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    background-color: rgb(52,52,53);
+    width: 20%;
+    height:630px;
+}
+.adds h3 {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 6px 7px;
+}
+.adds p{
+    color: rgba(255, 255, 255, 0.918);
+    padding: 7px 7px;
+    margin-top: 12px;
+    font-family: 'Ubuntu';
+    font-size: 13px;
+}
+.addBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #4e6baa;
+    color: rgb(255, 255, 255);
+    height: 1cm;
+    width: auto;
+    border-radius: 16px;
+    font-weight: bolder ;
+    font-family: 'Ubuntu';
+    margin-left: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.addBox img{
+    height: 1cm;
+    border-radius: 8px;
+}
+.songImage{
+    width: 72px;
+    height: 50px;
+}
+
+.songs{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    background-color: rgb(249, 253, 250);
+    width: 90%;
+    border-radius: 5px;
+    height: 1.3cm;
+    margin-top: 13px;
+    color: rgb(7, 7, 7);
+}
+.songName{
+    width: 20%;
+    text-align: center;
+}
+.songCreator{
+    width: 40%;
+    text-align: center;
+}
+.songDuration{
+    width: 10%;
+    text-align: center;
+}
+.songs:hover{
+    background-color: rgb(30,215,96);
+}
+.listButton{
+    margin-left: 20px;
+}
+.far{
+    width: 11%;
+    cursor: pointer;
+    text-align: center;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    position: sticky;
+    height: 110px;
+    background-color:rgb(3, 0, 0);
+    bottom: 0;
+    flex-direction: column;
+}
+.songGif{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.rangeBar{
+    display: flex;
+}
+#gifVisiblity{
+    opacity: 0;
+    transition: opacity 0.5s;
+} 
+.icons{
+    /* display: flex; */
+    text-align: center;
+    margin-top: 8px;
+    width: 300px;
+}
+.icons i{
+    cursor: pointer;
+    margin: 0px 4px 0px;
+}
+.fas{
+    cursor: pointer;
+    margin: 0px 22px 0px;
+}
+#progressBar{
+    width: 500px;
+}
+.playForMob{
+    display: none;
+}
+.songNameCreatorName{
+    display: flex;
+    flex-direction: column;
+}
+#bottomCreator{
+    font-size: 13px;
+    color: grey;
+}
+.offCanvas{
+    display: none;
+}
+}
+/* ////////////////////////////////////////For Tab/////////////////////////////////////////////// */
+
+@media all and (min-width:771px) and (max-width:1009px){
+    .nav{
+        display: flex;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+    .nav{
+        height: 1.5cm;
+        background-color: rgb(3, 0, 0);
+        font-family: 'Ubuntu';
+        width: 100%;
+    }
+    .pk{
+        padding:0 20px ;
+    }    
+    .availability{
+        display: none;
+    }
+    .userIcon{
+        width: 45px;
+        height: 45px;
+        background-color: grey;
+        text-align: center;
+        margin:0 10px 0 auto;
+        border-radius: 50%;
+    }
+    .userIconMid{
+        margin-top: 12px;
+        font-size: 20px;
+    }
+    .image img{
+        width: 42px;
+    }
+    #gifVisiblity{
+        display: none;;
+    }
+    .me-2{
+        width: 11.3cm;
+        /* width: 100%; */
+    }    
+    .srch{
+        display: flex;
+    }
+    .heading{
+        font-family: 'Ubuntu', sans-serif;
+        color: rgb(255, 255, 255); 
+        padding: 10px 10px;
+    
+    }
+    .main{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .main-2{
+        width: 70%;
+        margin-left: 10px;
+    }
+    .addsPrev{
+        background-color: rgb(58, 60, 61);
+        width: 25%;
+    }
+    .adds{
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: rgb(52,52,53);
+        width: 20%;
+        height:630px;
+    }
+    .adds h3 {
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        padding: 6px 7px;
+    }
+    .adds p{
+        color: rgba(255, 255, 255, 0.918);
+        padding: 7px 7px;
+        margin-top: 12px;
+        font-family: 'Ubuntu';
+        font-size: 13px;
+    }
+    .addBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: #4e6baa;
+        color: rgb(255, 255, 255);
+        height: 1cm;
+        width: 6.3cm;
+        border-radius: 16px;
+        font-weight: bolder ;
+        font-family: 'Ubuntu';
+        margin-left: 8px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .addBox img{
+        height: 1cm;
+        border-radius: 8px;
+    }
+    .songImage{
+        width: 72px;
+        height: 50px;
+    }
+    
+    .songs{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bolder;
+        background-color: rgb(249, 253, 250);
+        width: 90%;
+        border-radius: 5px;
+        height: 1.3cm;
+        margin-top: 13px;
+        color: rgb(7, 7, 7);
+    }
+    .songName{
+        width: 20%;
+        text-align: center;
+    }
+    .songCreator{
+        width: 40%;
+        text-align: center;
+    }
+    .songNameCreatorName{
+        padding: 27px 30px;
+    }
+    .songDuration{
+        width: 10%;
+        text-align: center;
+    }
+    .songs:hover{
+        background-color: rgb(30,215,96);
+    }
+    .listButton{
+        margin-left: 20px;
+    }
+    .far{
+        width: 11%;
+        cursor: pointer;
+        text-align: center;
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        position: sticky;
+        height: 110px;
+        background-color:rgb(3, 0, 0);
+        bottom: 0;
+        flex-direction: column;
+    }
+    .songGif{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-family: 'Ubuntu', sans-serif;
+    
+    }
+    #gifVisiblity{
+        opacity: 0;
+        transition: opacity 0.5s;
+    } 
+    .icons{
+        text-align: center;
+        margin-top: 8px;
+        width: 300px;
+    }
+    .playForMob{
+        display: none;
+    }
+    .icons i{
+        cursor: pointer;
+        margin: 0px 4px 0px;
+    }
+    .rangeBar{
+        display: flex;
+    }
+    .fas{
+        cursor: pointer;
+        margin: 0px 22px 0px;
+    }
+    #progressBar{
+        width: 390px;
+    }
+    .songNameCreatorName{
+        display: flex;
+        flex-direction: column;
+    }
+    #bottomCreator{
+        font-size: 13px;
+        color: grey;
+    }
+    .home,.about{
+        display: none;
+    }
+    .offCanvas{
+        font-size: 26px;
+        margin-left: 20px;
+    }
+    .offcanvas-body{
+        background-color: rgb(73, 72, 72);
+    }
+    .offImage{
+        width: 44px;
+    }
+    .offcanvas-header{
+        background-color: black;
+    }
+    .text-reset{
+        background-color: white;
+    }
+}
+/* /////////////////////////////////////////////for mobile///////////////////////////////////////////////////////// */
+
+@media all and (min-width:300px) and (max-width:771px){
+    .nav{
+        display: flex;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+    .nav{
+        height: 1.5cm;
+        background-color: rgb(3, 0, 0);
+        font-family: 'Ubuntu';
+        width: 100%;
+    }
+    .availability2{
+        display: none;
+    }
+    .offcanvas-title{
+        display: none;
+    }
+    .pk{
+        padding:0 20px ;
+    }    
+    .userIcon{
+        width: 45px;
+        height: 45px;
+        background-color: grey;
+        text-align: center;
+        /* margin:0 10px 0 auto; */
+        border-radius: 50%;
+    }
+    .spotifyText{
+        display: none;
+    }
+    .userIconMid{
+        margin-top: 12px;
+        font-size: 20px;
+    }
+    .image img{
+        width: 42px;
+    }
+    .me-2{
+        width: 90%;
+        /* width: 100%; */
+    }    
+    .srch{
+        display: flex;
+        width: 70%;
+    }
+    .heading{
+        font-family: 'Ubuntu', sans-serif;
+        color: rgb(255, 255, 255); 
+        padding: 10px 10px;
+    
+    }
+    .main{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .main-2{
+        width: 95%;
+        margin-left: 10px;
+    }
+    .addsPrev{
+        background-color: rgb(58, 60, 61);
+        width: 25%;
+    }
+    .adds{
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: rgb(52,52,53);
+        width: 20%;
+        height:630px;
+    }
+    .adds h3 {
+        font-family: 'Ubuntu';
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        padding: 6px 7px;
+    }
+    .adds p{
+        color: rgba(255, 255, 255, 0.918);
+        padding: 7px 7px;
+        margin-top: 12px;
+        font-family: 'Ubuntu';
+        font-size: 13px;
+    }
+    .addBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: #4e6baa;
+        color: rgb(255, 255, 255);
+        height: 1cm;
+        width: 6.3cm;
+        border-radius: 16px;
+        font-weight: bolder ;
+        font-family: 'Ubuntu';
+        margin-left: 8px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .addBox img{
+        height: 1cm;
+        border-radius: 8px;
+    }
+    .songImage{
+        width: 72px;
+        height: 50px;
+    }
+    
+    .songs{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bolder;
+        background-color: rgb(249, 253, 250);
+        width: 100%;
+        border-radius: 5px;
+        height: 1.3cm;
+        margin-top: 13px;
+        color: rgb(7, 7, 7);
+    }
+    .songName{
+        width: 20%;
+        text-align: center;
+    }
+    .songCreator{
+        width: 40%;
+        text-align: center;
+    }
+    .songNameCreatorName{
+        padding: 27px 30px;
+    }
+    .songDuration{
+        width: 10%;
+        text-align: center;
+    }
+    .songs:hover{
+        background-color: rgb(30,215,96);
+    }
+    .listButton{
+        margin-left: 20px;
+    }
+    .far{
+        width: 11%;
+        cursor: pointer;
+        text-align: center;
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        position: sticky;
+        height: 110px;
+        background-color:rgb(3, 0, 0);
+        bottom: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    .songGif{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-family: 'Ubuntu', sans-serif;
+    
+    }
+    #gifVisiblity{
+        display: none;
+        /* opacity: 0;
+        transition: opacity 0.5s; */
+    } 
+    .icons{
+        display: none;
+        text-align: center;
+        margin-top: 8px;
+        width: 300px;
+    }
+    .icons i{
+        cursor: pointer;
+        margin: 0px 4px 0px;
+    }
+    .fas{
+        cursor: pointer;
+        margin: 0px 22px 0px;
+    }
+    .rangeBar{
+        display: flex;
+        width: 100%;
+        /* margin-left: 30px; */
+    }
+    .forMob{
+        margin: 90px auto 0 auto;
+        
+    }
+    #playButton{
+       position: absolute; 
+       right: 0;
+       top: 20px;
+       font-size: 60px;
+    }
+    #progressBar{
+        /* margin-top: 90px; */
+        width: 82%;
+        margin: 90px auto 0 auto;
+    }
+    .songNameCreatorName{
+        display: flex;
+        flex-direction: column;
+    }
+    #bottomCreator{
+        font-size: 13px;
+        color: grey;
+    }
+    .home,.about{
+        display: none;
+    }
+    .offCanvas{
+        font-size: 26px;
+        margin-left: 20px;
+    }
+    .offcanvas-body{
+        background-color: rgb(73, 72, 72);
+    }
+    .offImage{
+        width: 44px;
+    }
+    .offcanvas-header{
+        background-color: black;
+    }
+    .text-reset{
+        background-color: white;
+    }
+}
